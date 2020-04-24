@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/functions.scss";
+@import "../node_modules/bootstrap/scss/variables.scss";
+
+// Bootstrap customizations start
+$enable-rounded: false;
+// Bootstrap customizations end
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom styles
