@@ -11,7 +11,7 @@ export class ConfigService {
 
   public readonly authUrl = 'https://localhost:9443';
 
-  public readonly apiUrl = 'https://localhost:8443/api';
+  public readonly apiUrl = 'http://localhost:8080/api';
 
   // Set this to true to enable the auto-login feature
   public readonly autoLogin = false;

@@ -9,7 +9,7 @@ export function authModuleConfigFactory(configService: ConfigService): OAuthModu
 
       // If specified as a funtion of type (url: string) => boolean
       // it will be used in place of the allowedUrls whitelist.
-      customUrlValidation: undefined,
+      // customUrlValidation: undefined,
 
       // If true access token is attached to request headers
       sendAccessToken: true

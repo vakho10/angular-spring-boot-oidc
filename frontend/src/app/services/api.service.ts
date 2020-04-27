@@ -8,7 +8,7 @@ import { ConfigService } from './config.service';
   providedIn: 'root'
 })
 export class ApiService {
-  
+
   constructor(private http: HttpClient, private configService: ConfigService) { }
 
   getProtectedApiResponse(): Observable<string> {
@@ -19,7 +19,7 @@ export class ApiService {
         // 'My-Custom-Header-2':  'header 2 value'
       })
     };
-    return this.http.get<any>(`${this.configService.apiUrl}/secret`, httpOptions)
+    return this.http.get<any>(`${this.configService.apiUrl}/message`, httpOptions)
       .pipe(
         map(response => response), // Don't change the result!
         catchError((e: HttpErrorResponse) => of(`🌩 API Error: ${e.status} ${e.statusText}`)),
