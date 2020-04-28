@@ -1,5 +1,8 @@
 spring:
   security:
     oauth2:
-      resourceserver:        
+      resourceserver:  #        opaquetoken:
+#          client-id: u_uMvnh3Bax8ZY2jZG7qJofpscAa
+#          client-secret: WH0mDkK_j5s08guK9_FPpelX4zIa#          introspection-uri: https://localhost:9443/oauth2/introspect     
+   
         jwt:          jwk-set-uri: https://localhost:9443/oauth2/jwks

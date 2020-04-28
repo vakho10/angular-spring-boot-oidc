@@ -21,7 +21,7 @@ export class ApiService {
     };
     return this.http.get<any>(`${this.configService.apiUrl}/message`, httpOptions)
       .pipe(
-        map(response => response), // Don't change the result!
+        map(response => `☁ Date returned by API call: ${response}`),
         catchError((e: HttpErrorResponse) => of(`🌩 API Error: ${e.status} ${e.statusText}`)),
       );
   }
